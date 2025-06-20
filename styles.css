@@ -1,72 +1,43 @@
 body {
-  background-image: url('./assets/space-background.jpg');
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url('./assets/space-background.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-
+/* Optional layout styling */
 header {
-  background-color: #111;
-  padding: 20px;
   text-align: center;
-  position: relative;
-}
-
-h1 {
-  margin: 0;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-
-nav ul.hidden {
-  display: none;
+  padding: 0;
 }
 
 nav ul li a {
-  color: #eee;
   text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #ffcc00;
+  color: yellow;
 }
 
-#menu-toggle {
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: #eee;
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-/* Show hamburger on smaller screens */
-@media (max-width: 600px) {
-  #menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 10px;
-    border-radius: 5px;
-  }
+section {
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 8px;
 }
