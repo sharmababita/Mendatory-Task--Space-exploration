@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Space Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Space Exploration</h1>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul id="nav-links" class="hidden">
+        <li><a href="#moon">Moon</a></li>
+        <li><a href="#sun">Sun</a></li>
+        <li><a href="#mars">Mars</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+  </header>
+
+  <section id="moon">
+    <h2>Moon</h2>
+    <p>The Moon is Earth's only natural satellite and the fifth largest moon in the Solar System.</p>
+  </section>
+
+  <section id="sun">
+    <h2>Sun</h2>
+    <p>The Sun is the star at the center of the Solar System and provides energy for life on Earth.</p>
+  </section>
+
+  <section id="mars">
+    <h2>Mars</h2>
+    <p>Mars is known as the Red Planet and is a potential candidate for human colonization.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
